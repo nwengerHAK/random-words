@@ -26,6 +26,10 @@ class Sentence
         $this->setSentence($sentence);
     }
 
+    public function getRandomUpperSentence(): string{
+        return strtoUpper($this->getRandomSentence());
+    }
+
     public function getRandomSentence(): string{
         $words = explode(' ', $this->sentence);
 
